@@ -2,25 +2,34 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1D243C;
+  --brand-primary: #18444f;
+  --brand-primary-hover: #133740;
+  --brand-secondary: #354262;
+  --brand-accent: #2f8095;
+  --brand-heading: #1D243C;
+  --brand-body: #3f4c7c;
+  --brand-surface: #F5F7FA;
+  --brand-light: #dfedf1;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-primary-hover: var(--brand-primary-hover);
+  --color-brand-secondary: var(--brand-secondary);
+  --color-brand-accent: var(--brand-accent);
+  --color-brand-heading: var(--brand-heading);
+  --color-brand-body: var(--brand-body);
+  --color-brand-surface: var(--brand-surface);
+  --color-brand-light: var(--brand-light);
+  --font-sans: var(--font-geist-sans), "Poppins", system-ui, -apple-system, sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: var(--brand-heading);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
 }
